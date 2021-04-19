@@ -1,3 +1,2 @@
 # My-first-page
-
-Big thanks for @https://github.com/smezzy who did the JavaScript 🇧🇷👍
+This is startpage for firefox that gets its colors from pywal
