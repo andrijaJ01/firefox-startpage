@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('file:///home/andrija/.cache/wal/colors.css');
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+.barra{
+    background-color: var(--background);
+    height: calc( 100vh - 2px);
+	   margin-left:1px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+    border-radius: 5px;
+    border:1px solid var(--color1)
+}
+
+.barra li, input{
+    color: var(--foreground);
+    width: 260px;
+    background-color: var(--color0);
+    padding: 11px 4px;
+    margin: 12px 0;
+    text-align: center;
+    list-style: none;
+    border-radius: 5px;
+}
+
+body {
+     background-color:var(--background)
+    /*background-image: var(--wallpaper);
+    background-size:  cover;
+    backdrop-filter:  brightness(0.8);*/
+}
+
+.barra h2{
+    color: var(--foreground);
+    margin-top: 30px;
+}
+
+input {
+    border-style:solid;
+    border:1px;
+    border-color:var(--color7)
+}
+input:focus {
+    outline: 2px var(--color1);
+    color:var(--foreground)
+}
+
+li:hover {
+    background-color:var(--color10);
+    cursor: pointer;
+}
+
+.pesquisa-container { 
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pesquisar {
+    color: var(--foreground);
+    height: auto;
+    width: 550px;
+    font-size: 'Poppins';
+    margin-top: 0%;
+    padding: 12px;
+    border:1px solid var(--color1)
+}
+
+#data,#hora {
+    font-family: 'Poppins';
+    color:var(--foreground);
+    font-size: 23px;
+    float: right;
+}
+
+#hora {
+    float: left;
+}
+
+.pesquisa-container div {
+    width: 550px;
+}
+
+.scroll{
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.delete {
+    animation: del .22s ease-in; 
+}
+.add {
+    animation: add .18s ease-out; 
+}
+
+@keyframes add {
+    from {
+        opacity: .7;
+        transform: scale(.5);
+    }
+    to {
+        opactiy: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes del {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opactiy: 0;
+        transform: scale(0);
+    }
+}
+#aitem{
+    border: 1px solid var(--color1);
+	    
+}
